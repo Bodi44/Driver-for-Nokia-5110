@@ -7,7 +7,7 @@
 
 
 
-#define gpio6 = 6;
+#define gpio6 6;
 
 static int project_init(){
     int result = 0;
