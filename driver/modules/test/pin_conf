@@ -1,6 +1,0 @@
-SCLK -> CLK
-CS0 -> CS
-#24 -> RST
-#23 -> D/C
-GND -> GND
-3.3 -> VCC
