@@ -1,4 +1,4 @@
 #!/bin/bash
 make
-sudo insmod project.ko
+insmod project.ko
 make clean
