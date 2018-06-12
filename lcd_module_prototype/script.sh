@@ -1,5 +1,7 @@
 #!/bin/bash
+{
 make
-insmod project.ko
-dmesg | tail -n
-make clean
+insmod char_driver.ko 
+make clean 
+} &> /dev/null
+dmesg | tail -1
