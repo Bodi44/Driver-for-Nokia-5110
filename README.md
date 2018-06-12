@@ -18,7 +18,7 @@ sudo bash script.sh
 
 **_Для того шоб вигрузити наш драйвер з системи:_**
 ```
-rmmod project.ko
+sudo rmmod project.ko
 ```
 
 
