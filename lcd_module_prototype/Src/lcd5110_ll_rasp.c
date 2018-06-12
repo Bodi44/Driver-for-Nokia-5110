@@ -1,6 +1,6 @@
 #include <linux/spi.h>
 #include <linux/gpio.h>
-
+#include <lcd5110_ll_rasp.h>
 
 #define RST 24
 #define DC 23
@@ -8,20 +8,6 @@
 #define CS 8
 #define DIN 10
 
-static inline void init_requsts(void){
-	gpio_requst(RST, "sysfs");
-	gpio_requst(DC, "sysfs");
-	gpio_requst(SCLK, "sysfs");
-	gpio_requst(CS, "sysfs");
-	gpio_requst(DIN, "sysfs");
-	gpio_direction_output(CS, 0);
-	gpio_direction_output(RST, 0);
-	volatile int i = 100;
-	while(--i){}
-	LCD5110_RST_on();
-	gpio_direction_output(DC, 0);
-
-}
 
 int send_byte_to_LCD5110(struct spi_device spi*, const void buf*){
 	return spi_write(spi, buf, 1);
