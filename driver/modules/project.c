@@ -144,5 +144,4 @@ module_exit(project_exit);
 
 
 MODULE_AUTHOR("Nikita");
-MODULE_DESCRIPTION(" X Y I ");
 MODULE_LICENSE("GPL");
