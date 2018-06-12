@@ -144,8 +144,5 @@ module_exit(project_exit);
 
 
 MODULE_AUTHOR("Nikita");
-<<<<<<< HEAD
-=======
 MODULE_DESCRIPTION("DriverforNokia");
->>>>>>> 8fa9bcd85a5761741e3bf7d892da37d594918c65
 MODULE_LICENSE("GPL");
